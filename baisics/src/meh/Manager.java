@@ -11,13 +11,17 @@ public class Manager
 	
 	public int counter = 0;
 	public Student[] student;	
-	
+	public Scanner sc = null;
+	public String line;
 	public void readin() throws FileNotFoundException
 	{
-		Scanner scFile = new Scanner(new File("baisics/src/textfiles/Student")).useDelimiter(",");
+		
+		Scanner scFile = new Scanner(new File("baisics/src/textfiles/Student"));
 		
 		while(scFile.hasNext())
 		{
+			line =  scFile.nextLine();
+			sc = new Scanner(line).useDelimiter(";");
 			name = scFile.next();
 			surname = scFile.next();
 			age = scFile.nextInt();
@@ -28,6 +32,9 @@ public class Manager
 			counter++;
 			
 		}
+		
+		scFile.close();
+		sc.close();
 	}
 	
 	public void printout()

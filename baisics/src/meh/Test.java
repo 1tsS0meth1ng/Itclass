@@ -1,8 +1,12 @@
 package meh;
 
+import java.io.FileNotFoundException;
+
 public class Test 
 {
-	Student test = new Student();
-	test.readin();
-	
+	public static void main(String[] args) throws FileNotFoundException
+	{
+		Manager test1;
+		test1.readin();
+	}
 }
