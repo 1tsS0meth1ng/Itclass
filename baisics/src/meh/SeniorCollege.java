@@ -1,5 +1,6 @@
 package meh;
 
-public class SeniorCollege {
-
+public class SeniorCollege extends Student
+{
+	
 }
