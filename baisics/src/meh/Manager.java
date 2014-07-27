@@ -15,7 +15,7 @@ public class Manager
 	
 	public void readin() throws IOException
 	{
-		Scanner scFile = new Scanner(new File("C:/Users/Brendan/Documents/Programs/Itclass/baisics/src/textfiles/Student.txt"));		
+		Scanner scFile = new Scanner(new File("C:/Users/Brendan/Documents/Programs/Itclass/baisics/src/textfiles/Student.txt"));//feel free to change the location of the text file to match the location on your pc	
 		Scanner sc = null;
 		String line = "";
 		
@@ -29,7 +29,7 @@ public class Manager
 			age = sc.nextInt();
 			grade = sc.nextInt();
 			ID = sc.next();
-			System.out.println(name);
+			
 			student[counter] = new Student(name,surname,age,grade,ID);
 			counter++;
 			
