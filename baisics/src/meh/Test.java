@@ -1,12 +1,14 @@
 package meh;
 
-import java.io.FileNotFoundException;
+import java.io.IOException;
 
 public class Test 
 {
-	public static void main(String[] args) throws FileNotFoundException
+	
+	public static void main(String[] args) throws IOException
 	{
-		Manager test1;
-		test1.readin();
+		Manager hello = new Manager();
+		hello.readin();
+		hello.printout();
 	}
 }

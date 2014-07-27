@@ -4,7 +4,7 @@ public class Student
 {
 	private int grade,age;
 	private String name, surname,ID;
-	public Student(String surname, String name,int age,int grade, String ID)
+	public Student(String name,String surname, int age,int grade, String ID)
 	{
 		this.grade = grade;
 		this.name = name;
@@ -46,6 +46,11 @@ public class Student
 	public void setAge(int age) {
 		this.age = age;
 	}
+	@Override
+	public String toString() {
+		return "Student:\nName: " + name + ", Surname: " + surname + ", Age: " + age + ", Grade: " + grade + ", ID: "+ID;
+	}
+	
 	
 	
 }
